@@ -1,0 +1,74 @@
+
+.kartya {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  padding: 18px;
+  background-color: #ffffff;
+  border: 1px solid #cbd3cd;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgb(0 0 0 / 5%);
+}
+
+.kartya h2 {
+  margin: 0 0 8px;
+  font-size: 20px;
+  color: #354c3b;
+}
+
+.kartya > p {
+  margin: 0 0 16px;
+  color: #68736b;
+}
+
+.kartya .adatok {
+  margin-bottom: 16px;
+}
+
+.kartya .adatok p {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 9px 0;
+  margin: 0;
+  border-bottom: 1px solid #e5e9e6;
+  line-height: 1.4;
+}
+
+.kartya strong {
+  margin-bottom: 10px;
+  color: #b42318;
+}
+
+.kartya button {
+  width: 100%;
+  margin-top: auto;
+  padding: 12px 10px;
+  border: none;
+  border-radius: 6px;
+  background-color: #354c3b;
+  color: #ffffff;
+  font-weight: bold;
+  transition: background-color 0.2s;
+}
+
+.kartya button:hover:not(:disabled) {
+  background-color: #4c6a53;
+}
+
+.kartya button:disabled {
+  background-color: #a5aaa6;
+  color: #ffffff;
+}
+
+@media (max-width: 900px) {
+  .kartya {
+    padding: 15px;
+  }
+}
+
+@media (max-width: 600px) {
+  .kartya h2 {
+    font-size: 18px;
+  }
+}

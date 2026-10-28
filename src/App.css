@@ -1,0 +1,89 @@
+
+.oldal {
+  width: 90%;
+  max-width: 1200px;
+  margin: 30px auto;
+}
+
+.fejlec {
+  padding: 24px 16px;
+  margin-bottom: 25px;
+  text-align: center;
+  background-color: #ffffff;
+  border: 1px solid #cbd3cd;
+  border-radius: 8px;
+}
+
+.fejlec h1 {
+  margin: 0 0 10px;
+  font-size: 26px;
+  letter-spacing: 1px;
+}
+
+.fejlec p {
+  margin: 0;
+  color: #68736b;
+  font-size: 16px;
+}
+
+.szuro {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 24px;
+}
+
+.szuro label {
+  font-weight: bold;
+}
+
+.szuro select {
+  min-width: 220px;
+  padding: 10px 12px;
+  border: 1px solid #cbd3cd;
+  border-radius: 6px;
+  background-color: #ffffff;
+  color: #303633;
+}
+
+/* Tablet */
+@media (max-width: 900px) {
+  .oldal {
+    width: 94%;
+    margin: 22px auto;
+  }
+
+  .fejlec h1 {
+    font-size: 22px;
+  }
+}
+
+/* Mobil */
+@media (max-width: 600px) {
+  .oldal {
+    width: calc(100% - 24px);
+    margin: 12px auto;
+  }
+
+  .fejlec {
+    padding: 18px 10px;
+  }
+
+  .fejlec h1 {
+    font-size: 19px;
+  }
+
+  .fejlec p {
+    font-size: 14px;
+  }
+
+  .szuro {
+    align-items: stretch;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .szuro select {
+    width: 100%;
+  }
+}
